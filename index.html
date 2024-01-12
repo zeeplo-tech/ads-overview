@@ -1,8 +1,17 @@
 <BODY style="border: 0;margin: 0;">
     <div style="position:relative;border:0" margin="0" padding="0" spacing="0" >
-
-    <iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/f1d7f4b2-495f-4fe1-acfc-7ab176c4183d?params=%7B"p1":"1290248925","p2":"Didi","p3":"BRL%20Doji01","p4":"Didi"%7D" frameborder="0" style="border:0"></iframe>
-    <!--<iframe src="https://lookerstudio.google.com/embed/reporting/0bfabf13-4459-4145-b5c9-47ebcdbab837/page/p_e60vmmge9c" frameborder="0" style="border:0" allowfullscreen width="100%" height="100%"></iframe>-->
 </div>
+<script>
+    var url = window.location.href;
+    var url = url.split('?');
+    var url = url.slice(1);
+    var params = url.toString();
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://lookerstudio.google.com/embed/reporting/f1d7f4b2-495f-4fe1-acfc-7ab176c4183d/page/p_5jv44qduad?params=' + url;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.frameborder = '0';
+    iframe.style.border = '0';
+    document.body.appendChild(iframe);
+</script>
 </BODY>
-
